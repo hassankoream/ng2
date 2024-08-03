@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.my-container{
+    @apply  py-10 my-6 bg-blue-600 mx-auto text-center w-[80%]  flex justify-center items-center;
+}
+
+.line-title::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: white;
+    left: 40px;
+    top: 50%;
+    /* margin-top: 10px; */
+
+}
+.line-title::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: white;
+    right: 40px;
+    top: 50%;
+    /* margin-top: 10px; */
+
+}
+
+
+.nav-bar{
+    z-index: 99;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}

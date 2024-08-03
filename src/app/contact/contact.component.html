@@ -1,0 +1,101 @@
+<section class="about py-3   text-center flex justify-center items-center">
+
+    <div class="w-[80%] container">
+        <div class="flex flex-col justify-center items-center text-[#2C3E50]">
+            <h1 class="text-3xl font-bold  my-10 uppercase">conatct section
+            </h1>
+            <div class="line-title relative mb-4 after:bg-[#2C3E50] before:bg-[#2C3E50]">
+        
+                <i class="fa-solid fa-star"></i>
+        
+            </div>
+        
+        </div>
+        <div action="">
+            <div class="inputs mt-10 flex justify-center items-center flex-wrap">
+                <div class="relative w-[60%] mb-8">
+                    <label
+                      for="userName"
+                      [class.block]="userName"
+                      [class.transform]="userName"
+                      [class.-translate-y-10]="userName"
+                      class="absolute text-[#1ABC9C] transition-all duration-[0.8s]"
+                    >
+                      userName :
+                    </label>
+                    <input
+                      id="userName"
+                      type="text"
+                      class="border-b-2 border-spacing-2 w-full relative bottom-2 focus:outline-none pb-5 placeholder-bold"
+                      placeholder="userName"
+                      [(ngModel)]="userName"
+                    />
+                  </div>
+                <div class="relative w-[60%] mb-8">
+                    <label
+                      for="userAge"
+                      [class.block]="userAge"
+                      [class.transform]="userAge"
+                      [class.-translate-y-10]="userAge"
+                      class="absolute text-[#1ABC9C] transition-all duration-[0.8s]"
+                    >
+                      userAge :
+                    </label>
+                    <input
+                      id="userAge"
+                      type="text"
+                      class="border-b-2 border-spacing-2 w-full relative bottom-2 focus:outline-none pb-5 placeholder-bold"
+                      placeholder="userAge"
+                      [(ngModel)]="userAge"
+                    />
+                  </div>
+                <div class="relative w-[60%] mb-8">
+                    <label
+                      for="userEmail"
+                      [class.block]="userEmail"
+                      [class.transform]="userEmail"
+                      [class.-translate-y-10]="userEmail"
+                      class="absolute text-[#1ABC9C] transition-all duration-[0.8s]"
+                    >
+                      userEmail :
+                    </label>
+                    <input
+                      id="userEmail"
+                      type="text"
+                      class="border-b-2 border-spacing-2 w-full relative bottom-2 focus:outline-none pb-5 placeholder-bold"
+                      placeholder="userEmail"
+                      [(ngModel)]="userEmail"
+                    />
+                  </div>
+                <div class="relative w-[60%] mb-8">
+                    <label
+                      for="userPassword"
+                      [class.block]="userPassword"
+                      [class.transform]="userPassword"
+                      [class.-translate-y-10]="userPassword"
+                      class="absolute text-[#1ABC9C] transition-all duration-[0.8s]"
+                    >
+                      userPassword :
+                    </label>
+                    <input
+                      id="userPassword"
+                      type="text"
+                      class="border-b-2 border-spacing-2 w-full relative bottom-2 focus:outline-none pb-5 placeholder-bold"
+                      placeholder="userPassword"
+                      [(ngModel)]="userPassword"
+                    />
+                  </div>
+                  <div class="  w-[60%] mb-8 flex justify-start">
+                    <button class="bg-[#1ABC9C] p-2 rounded-lg text-white hover:bg-red-600 duration-300" (click)="clearForm()">
+                        send message
+                      </button>
+                </div>
+                
+            </div>
+                      
+        
+        </div>
+       
+       
+    </div>
+    </section>

@@ -1,0 +1,3 @@
+.placeholder-bold::placeholder {
+    @apply font-medium;
+  }

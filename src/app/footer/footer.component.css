@@ -1,0 +1,13 @@
+h2{
+    font-size: 1.8rem;
+}
+.row {
+    @apply grid md:grid-cols-2 lg:grid-cols-3 gap-4;
+  }
+  .col{
+    @apply  m-4;
+  
+  }
+  .inner{
+    @apply my-5;
+  }

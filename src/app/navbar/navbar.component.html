@@ -1,0 +1,40 @@
+<!-- position fixed will destroy your layout -->
+<!-- I am sure there is a better way -->
+    <nav class="bg-[#2C3E50] py-5 relative">
+        <div class="">
+            <div class="container mx-auto flex justify-between items-center w-[80%] ">
+        
+                <div routerLink="home" class="text-white md:text-4xl font-bold uppercase cursor-pointer">
+                    Start Framework
+                </div>
+                <div class="nav-container">
+                   
+                    <div class="md:flex  font-bold text-lg nav-links" >
+                        <a routerLinkActive="bg-[#1ABC9C]  rounded-md" routerLink="about" class="text-white px-2 py-1">About</a>
+                        <a routerLinkActive="bg-[#1ABC9C]  rounded-md" routerLink="portfolio" class="text-white px-2 py-1">Portfolio</a>
+                        <a routerLinkActive="bg-[#1ABC9C]  rounded-md" routerLink="contact" class="text-white px-2 py-1">Contact</a>
+                    </div>
+                    
+                </div>
+                <i class="fa-solid fa-bars md:hidden cursor-pointer text-[30px]" (click)="openMenu()"></i>
+                <div class="nav-container-mobile md:hidden transition-all duration-[0.8s]"
+                 [class]="menuOpen == true? '':'hidden'">
+                   
+                    <div class=" font-bold text-lg nav-links" >
+                        
+                        <a routerLinkActive="bg-[#1ABC9C]  rounded-md" routerLink="about" class="text-white px-2 py-1">About</a>
+                        <a routerLinkActive="bg-[#1ABC9C]  rounded-md" routerLink="portfolio" class="text-white px-2 py-1">Portfolio</a>
+                        <a routerLinkActive="bg-[#1ABC9C]  rounded-md" routerLink="contact" class="text-white px-2 py-1">Contact</a>
+                    </div>
+                   
+                </div>
+               
+               
+            </div>
+        </div>
+  
+    </nav>
+
+
+
+
